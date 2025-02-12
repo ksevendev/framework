@@ -1,9 +1,0 @@
-DEBUG - 2025-02-04 00:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-02-04 00:12:30 --> CLASS: \Site\Config\Info
-DEBUG - 2025-02-04 00:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-02-04 14:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-02-04 14:25:41 --> CLASS: \Site\Config\Info
-DEBUG - 2025-02-04 14:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-DEBUG - 2025-02-04 19:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2025-02-04 19:46:20 --> CLASS: \Site\Config\Info
-DEBUG - 2025-02-04 19:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

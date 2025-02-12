@@ -1,0 +1,117 @@
+DEBUG - 2025-01-24 02:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 02:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 02:25:14 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 02:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 11:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-24 11:52:57 --> CodeIgniter\Security\Exceptions\SecurityException: A ação que você requisitou não é permitida.
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('auth/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-24 11:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:53:39 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 11:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 11:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:53:43 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 11:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 11:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:53:51 --> CSRF token verified.
+INFO - 2025-01-24 11:53:51 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 11:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:53:53 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 11:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:54:05 --> REDIRECTED ROUTE at https://kchurch.test/admin/dashboard
+DEBUG - 2025-01-24 11:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 11:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:54:06 --> CLASS: \Site\Config\Info
+WARNING - 2025-01-24 11:54:06 --> [DEPRECATED] Implicit conversion from float 0.33333333333333326 to int loses precision in APPPATH\Models\CongregationModel.php on line 290.
+ 1 APPPATH\Models\CongregationModel.php(290): rand(0, 0.33333333333333326)
+ 2 APPPATH\Controllers\Panel\Dashboard.php(107): App\Models\CongregationModel->getCongregationsRound(3)
+ 3 APPPATH\Controllers\Panel\Dashboard.php(74): App\Controllers\Panel\Dashboard->getCongregations()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Panel\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-24 11:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 11:54:08 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 11:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 12:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 12:09:32 --> CLASS: \Site\Config\Info
+WARNING - 2025-01-24 12:09:32 --> [DEPRECATED] Implicit conversion from float 0.33333333333333326 to int loses precision in APPPATH\Models\CongregationModel.php on line 290.
+ 1 APPPATH\Models\CongregationModel.php(290): rand(0, 0.33333333333333326)
+ 2 APPPATH\Controllers\Panel\Dashboard.php(107): App\Models\CongregationModel->getCongregationsRound(3)
+ 3 APPPATH\Controllers\Panel\Dashboard.php(74): App\Controllers\Panel\Dashboard->getCongregations()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Panel\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-24 12:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 12:09:34 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 12:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 13:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:12:08 --> CLASS: \Site\Config\Info
+WARNING - 2025-01-24 13:12:08 --> [DEPRECATED] Implicit conversion from float 0.33333333333333326 to int loses precision in APPPATH\Models\CongregationModel.php on line 290.
+ 1 APPPATH\Models\CongregationModel.php(290): rand(0, 0.33333333333333326)
+ 2 APPPATH\Controllers\Panel\Dashboard.php(107): App\Models\CongregationModel->getCongregationsRound(3)
+ 3 APPPATH\Controllers\Panel\Dashboard.php(74): App\Controllers\Panel\Dashboard->getCongregations()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Panel\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-24 13:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:12:14 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 13:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 13:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:49:17 --> CLASS: \Site\Config\Info
+WARNING - 2025-01-24 13:49:17 --> [DEPRECATED] Implicit conversion from float 0.33333333333333326 to int loses precision in APPPATH\Models\CongregationModel.php on line 290.
+ 1 APPPATH\Models\CongregationModel.php(290): rand(0, 0.33333333333333326)
+ 2 APPPATH\Controllers\Panel\Dashboard.php(107): App\Models\CongregationModel->getCongregationsRound(3)
+ 3 APPPATH\Controllers\Panel\Dashboard.php(74): App\Controllers\Panel\Dashboard->getCongregations()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Panel\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-24 13:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:49:19 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 13:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 13:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:50:09 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 13:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:50:10 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 13:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 13:50:11 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 13:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 14:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:23:01 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:23:05 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 14:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:34:23 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:34:53 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:34:54 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:34:56 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-01-24 14:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:35:12 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-24 14:35:58 --> CLASS: \Site\Config\Info
+DEBUG - 2025-01-24 14:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Mini Framework PHP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        #content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .menu-item {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+        .menu-item:hover {
+            background: #444;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Mini Framework PHP</h2>
+        <div class="menu-item" onclick="showSection('intro')">Introdução</div>
+        <div class="menu-item" onclick="showSection('install')">Instalação</div>
+        <div class="menu-item" onclick="showSection('routing')">Roteamento</div>
+        <div class="menu-item" onclick="showSection('controllers')">Controllers</div>
+        <div class="menu-item" onclick="showSection('models')">Models</div>
+        <div class="menu-item" onclick="showSection('views')">Views</div>
+        <div class="menu-item" onclick="showSection('services')">Serviços</div>
+        <div class="menu-item" onclick="showSection('kernel')">Kernel</div>
+        <div class="menu-item" onclick="showSection('providers')">Providers</div>
+        <div class="menu-item" onclick="showSection('exceptions')">Exceptions</div>
+        <div class="menu-item" onclick="showSection('console')">Console</div>
+    </div>
+
+    <div id="content">
+        <section id="intro" class="active">
+            <h1>Introdução</h1>
+            <p>Bem-vindo à documentação do Mini Framework PHP. Este framework é modular, simples e escalável.</p>
+        </section>
+        
+        <section id="install">
+            <h1>Instalação</h1>
+            <p>Para instalar, execute os seguintes comandos:</p>
+            <pre><code>git clone https://github.com/seu-repositorio/mini-framework.git
+cd mini-framework
+composer install</code></pre>
+        </section>
+        
+        <section id="routing">
+            <h1>Roteamento</h1>
+            <p>Exemplo de configuração de rotas:</p>
+            <pre><code>return function (FastRoute\RouteCollector $router) {
+    $router->addRoute('GET', '/', 'HomeController@index');
+};</code></pre>
+        </section>
+        
+        <section id="controllers">
+            <h1>Controllers</h1>
+            <p>Exemplo de um Controller:</p>
+            <pre><code>namespace App\Controllers;
+
+class HomeController {
+    public function index() {
+        return view('home');
+    }
+}</code></pre>
+        </section>
+
+        <section id="models">
+            <h1>Models</h1>
+            <p>Configuração de um Model:</p>
+            <pre><code>namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model {
+    protected $table = 'users';
+}</code></pre>
+        </section>
+
+        <section id="views">
+            <h1>Views</h1>
+            <p>Exemplo de uma view usando Blade:</p>
+            <pre><code>@extends('layouts.master')
+
+@section('content')
+    <h1>Bem-vindo</h1>
+@endsection</code></pre>
+        </section>
+
+        <section id="services">
+            <h1>Serviços</h1>
+            <p>Os serviços são registrados e gerenciados através do container de injeção de dependências.</p>
+            <pre><code>namespace App\Services;
+
+class ExemploService {
+    public function executar() {
+        return "Serviço funcionando!";
+    }
+}</code></pre>
+        </section>
+
+        <section id="kernel">
+            <h1>Kernel</h1>
+            <p>O Kernel gerencia o ciclo de vida da aplicação.</p>
+            <pre><code>namespace App;
+
+class Kernel {
+    public function handle() {
+        // Lógica do Kernel
+    }
+}</code></pre>
+        </section>
+
+        <section id="providers">
+            <h1>Providers</h1>
+            <p>Os providers registram serviços na aplicação.</p>
+            <pre><code>namespace App\Providers;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider {
+    public function register() {
+        $this->app->singleton('servico', function() {
+            return new \App\Services\ExemploService;
+        });
+    }
+}</code></pre>
+        </section>
+
+        <section id="exceptions">
+            <h1>Exceptions</h1>
+            <p>Gerenciamento de exceções personalizadas.</p>
+            <pre><code>namespace App\Exceptions;
+use Exception;
+
+class CustomException extends Exception {
+    public function report() {
+        // Lógica de relatório de erro
+    }
+}</code></pre>
+        </section>
+
+        <section id="console">
+            <h1>Console</h1>
+            <p>Criação de comandos personalizados.</p>
+            <pre><code>namespace App\Console;
+use Illuminate\Console\Command;
+
+class ExemploCommand extends Command {
+    protected $signature = 'exemplo:executar';
+    protected $description = 'Executa um comando de exemplo';
+
+    public function handle() {
+        $this->info("Comando executado!");
+    }
+}</code></pre>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

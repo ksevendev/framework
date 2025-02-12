@@ -1,0 +1,345 @@
+DEBUG - 2025-02-01 16:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:48:54 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:50:29 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:50:58 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:51:40 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:51:57 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:52:39 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:54:06 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:54:45 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:55:04 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:55:18 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 16:55:36 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 16:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:32:33 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:38:37 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:38:42 --> CSRF token verified.
+INFO - 2025-02-01 19:38:42 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:38:43 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:38:44 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:39:19 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:39:21 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 19:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:41:36 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:41:40 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 19:41:42 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 19:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:30:07 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:30:13 --> CSRF token verified.
+INFO - 2025-02-01 22:30:13 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:30:13 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:30:15 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-01 22:40:40 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: admin/institution/congregations]
+in SYSTEMPATH\Router\RouteCollection.php on line 1606.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1457): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/site/layouts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1052): CodeIgniter\Router\RouteCollection->create('GET', 'admin/site/layouts', [...], [])
+ 3 APPPATH\Common.php(64): CodeIgniter\Router\RouteCollection->get('layouts', [...], [])
+ 4 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 5 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 6 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('site', Object(Closure))
+ 7 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 8 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 9 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+10 APPPATH\Libraries\BaseInfo.php(60): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+11 ROOTPATH\plugins\Site\Config\Routes.php(30): App\Libraries\BaseInfo->router(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\Router\RouteCollection.php(372): include('C:\\public_html\\kchurch\\plugins\\Site\\Config\\Routes.php')
+13 SYSTEMPATH\Router\RouteCollection.php(342): CodeIgniter\Router\RouteCollection->discoverRoutes()
+14 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+15 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-01 22:41:16 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: admin/institution/congregations]
+in SYSTEMPATH\Router\RouteCollection.php on line 1606.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1457): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/site/layouts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1052): CodeIgniter\Router\RouteCollection->create('GET', 'admin/site/layouts', [...], [])
+ 3 APPPATH\Common.php(64): CodeIgniter\Router\RouteCollection->get('layouts', [...], [])
+ 4 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 5 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 6 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('site', Object(Closure))
+ 7 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 8 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 9 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+10 APPPATH\Libraries\BaseInfo.php(60): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+11 ROOTPATH\plugins\Site\Config\Routes.php(30): App\Libraries\BaseInfo->router(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\Router\RouteCollection.php(372): include('C:\\public_html\\kchurch\\plugins\\Site\\Config\\Routes.php')
+13 SYSTEMPATH\Router\RouteCollection.php(342): CodeIgniter\Router\RouteCollection->discoverRoutes()
+14 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+15 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-01 22:41:54 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: admin/institution/congregations]
+in SYSTEMPATH\Router\RouteCollection.php on line 1606.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1457): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/site/layouts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1052): CodeIgniter\Router\RouteCollection->create('GET', 'admin/site/layouts', [...], [])
+ 3 APPPATH\Common.php(64): CodeIgniter\Router\RouteCollection->get('layouts', [...], [])
+ 4 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 5 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 6 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('site', Object(Closure))
+ 7 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 8 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 9 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+10 APPPATH\Libraries\BaseInfo.php(60): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+11 ROOTPATH\plugins\Site\Config\Routes.php(30): App\Libraries\BaseInfo->router(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\Router\RouteCollection.php(372): include('C:\\public_html\\kchurch\\plugins\\Site\\Config\\Routes.php')
+13 SYSTEMPATH\Router\RouteCollection.php(342): CodeIgniter\Router\RouteCollection->discoverRoutes()
+14 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+15 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-01 22:42:30 --> TypeError: CodeIgniter\Router\RouteCollection::processArrayCallableSyntax(): Return value must be of type string, array returned
+[Method: GET, Route: admin/institution/congregations]
+in SYSTEMPATH\Router\RouteCollection.php on line 1606.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1457): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('admin/site/layouts', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1052): CodeIgniter\Router\RouteCollection->create('GET', 'admin/site/layouts', [...], [])
+ 3 APPPATH\Common.php(64): CodeIgniter\Router\RouteCollection->get('layouts', [...], [])
+ 4 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 5 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 6 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('site', Object(Closure))
+ 7 APPPATH\Common.php(97): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+ 8 SYSTEMPATH\Router\RouteCollection.php(799): {closure}(Object(CodeIgniter\Router\RouteCollection))
+ 9 APPPATH\Common.php(93): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+10 APPPATH\Libraries\BaseInfo.php(60): typeRequest(Object(CodeIgniter\Router\RouteCollection), [...])
+11 ROOTPATH\plugins\Site\Config\Routes.php(30): App\Libraries\BaseInfo->router(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\Router\RouteCollection.php(372): include('C:\\public_html\\kchurch\\plugins\\Site\\Config\\Routes.php')
+13 SYSTEMPATH\Router\RouteCollection.php(342): CodeIgniter\Router\RouteCollection->discoverRoutes()
+14 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+15 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 22:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:43:00 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:43:03 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:43:08 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:43:10 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:44 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:45 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:46 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:55 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:56 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:51:57 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:52:44 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:52:45 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:52:47 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:53:34 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:53:35 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:54:08 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:54:13 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 22:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:55:05 --> CLASS: \Site\Config\Info
+CRITICAL - 2025-02-01 22:55:05 --> CodeIgniter\Exceptions\InvalidArgumentException: Missing argument for "(:num)" in route "admin/site/layout/(:num)/page/(:num)".
+[Method: GET, Route: admin/site/layouts]
+in SYSTEMPATH\Router\RouteCollection.php on line 1384.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1205): CodeIgniter\Router\RouteCollection->buildReverseRoute('admin/site/layout/(:num)/page/(:num)', [])
+ 2 SYSTEMPATH\Common.php(955): CodeIgniter\Router\RouteCollection->reverseRoute('site.setting')
+ 3 SYSTEMPATH\Helpers\url_helper.php(505): route_to('site.setting')
+ 4 ROOTPATH\plugins\Site\Config\Info.php(247): url_to('site.setting')
+ 5 APPPATH\PluginsManager.php(99): Site\Config\Info->sidebar()
+ 6 APPPATH\PluginsManager.php(92): App\PluginsManager->generateSidebar(Object(Site\Config\Info), [...])
+ 7 APPPATH\PluginsManager.php(81): App\PluginsManager->processSidebar('\\Site\\Config\\Info')
+ 8 APPPATH\PluginsManager.php(68): App\PluginsManager->loadPluginSidebar([...])
+ 9 APPPATH\Controllers\BaseController.php(90): App\PluginsManager->loadSidebar()
+10 ROOTPATH\plugins\Site\Controllers\BaseController.php(36): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+11 SYSTEMPATH\CodeIgniter.php(904): Site\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 22:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:56:00 --> CLASS: \Site\Config\Info
+CRITICAL - 2025-02-01 22:56:00 --> CodeIgniter\Exceptions\InvalidArgumentException: Missing argument for "(:num)" in route "admin/site/layout/(:num)/page/(:num)".
+[Method: GET, Route: admin/site/layouts]
+in SYSTEMPATH\Router\RouteCollection.php on line 1384.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1205): CodeIgniter\Router\RouteCollection->buildReverseRoute('admin/site/layout/(:num)/page/(:num)', [])
+ 2 SYSTEMPATH\Common.php(955): CodeIgniter\Router\RouteCollection->reverseRoute('site.setting')
+ 3 SYSTEMPATH\Helpers\url_helper.php(505): route_to('site.setting')
+ 4 ROOTPATH\plugins\Site\Config\Info.php(247): url_to('site.setting')
+ 5 APPPATH\PluginsManager.php(99): Site\Config\Info->sidebar()
+ 6 APPPATH\PluginsManager.php(92): App\PluginsManager->generateSidebar(Object(Site\Config\Info), [...])
+ 7 APPPATH\PluginsManager.php(81): App\PluginsManager->processSidebar('\\Site\\Config\\Info')
+ 8 APPPATH\PluginsManager.php(68): App\PluginsManager->loadPluginSidebar([...])
+ 9 APPPATH\Controllers\BaseController.php(90): App\PluginsManager->loadSidebar()
+10 ROOTPATH\plugins\Site\Controllers\BaseController.php(36): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+11 SYSTEMPATH\CodeIgniter.php(904): Site\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 22:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:56:40 --> CLASS: \Site\Config\Info
+CRITICAL - 2025-02-01 22:56:40 --> CodeIgniter\Exceptions\InvalidArgumentException: Missing argument for "(:num)" in route "admin/site/layout/(:num)/page/(:num)".
+[Method: GET, Route: admin/site/layouts]
+in SYSTEMPATH\Router\RouteCollection.php on line 1384.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1205): CodeIgniter\Router\RouteCollection->buildReverseRoute('admin/site/layout/(:num)/page/(:num)', [])
+ 2 SYSTEMPATH\Common.php(955): CodeIgniter\Router\RouteCollection->reverseRoute('site.setting')
+ 3 SYSTEMPATH\Helpers\url_helper.php(505): route_to('site.setting')
+ 4 ROOTPATH\plugins\Site\Config\Info.php(247): url_to('site.setting')
+ 5 APPPATH\PluginsManager.php(99): Site\Config\Info->sidebar()
+ 6 APPPATH\PluginsManager.php(92): App\PluginsManager->generateSidebar(Object(Site\Config\Info), [...])
+ 7 APPPATH\PluginsManager.php(81): App\PluginsManager->processSidebar('\\Site\\Config\\Info')
+ 8 APPPATH\PluginsManager.php(68): App\PluginsManager->loadPluginSidebar([...])
+ 9 APPPATH\Controllers\BaseController.php(90): App\PluginsManager->loadSidebar()
+10 ROOTPATH\plugins\Site\Controllers\BaseController.php(36): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+11 SYSTEMPATH\CodeIgniter.php(904): Site\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 22:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:57:19 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 22:57:21 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 22:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:00:28 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:00:34 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:01:07 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:01:08 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:20:34 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:20:36 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:21:59 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:22:00 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:22:05 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:22:53 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:22:53 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:23:52 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:23:55 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:34:13 --> CLASS: \Site\Config\Info
+CRITICAL - 2025-02-01 23:34:13 --> ErrorException: Trying to access array offset on value of type int
+[Method: GET, Route: admin/site/layouts]
+in ROOTPATH\plugins\Site\Views\panel\layouts\index.php on line 52.
+ 1 ROOTPATH\plugins\Site\Views\panel\layouts\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\public_html\\kchurch\\plugins\\Site\\Views\\panel\\layouts\\index.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\public_html\\kchurch\\plugins\\Site\\Views\\panel\\layouts\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Site\\Views\\panel\\layouts\\index', [], true)
+ 5 ROOTPATH\plugins\Site\Controllers\BaseController.php(58): view('Site\\Views\\panel\\layouts\\index', [...])
+ 6 ROOTPATH\plugins\Site\Controllers\Panel\Layouts.php(35): Site\Controllers\BaseController->view('panel\\layouts\\index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): Site\Controllers\Panel\Layouts->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Site\Controllers\Panel\Layouts))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 23:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:34:24 --> CLASS: \Site\Config\Info
+CRITICAL - 2025-02-01 23:34:24 --> ErrorException: Trying to access array offset on value of type int
+[Method: GET, Route: admin/site/layouts]
+in ROOTPATH\plugins\Site\Views\panel\layouts\index.php on line 52.
+ 1 ROOTPATH\plugins\Site\Views\panel\layouts\index.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'C:\\public_html\\kchurch\\plugins\\Site\\Views\\panel\\layouts\\index.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\public_html\\kchurch\\plugins\\Site\\Views\\panel\\layouts\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Site\\Views\\panel\\layouts\\index', [], true)
+ 5 ROOTPATH\plugins\Site\Controllers\BaseController.php(58): view('Site\\Views\\panel\\layouts\\index', [...])
+ 6 ROOTPATH\plugins\Site\Controllers\Panel\Layouts.php(35): Site\Controllers\BaseController->view('panel\\layouts\\index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): Site\Controllers\Panel\Layouts->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(Site\Controllers\Panel\Layouts))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(63): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-01 23:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:37:30 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:37:31 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-01 23:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:38:25 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-01 23:38:27 --> CLASS: \Site\Config\Info
+DEBUG - 2025-02-01 23:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

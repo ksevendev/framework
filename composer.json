@@ -41,6 +41,7 @@
             "App\\": "app/"
         },
         "files": [
+            "app/Constant.php",
             "app/Bootstrap/helper.php"
         ],
         "exclude-from-classmap": [

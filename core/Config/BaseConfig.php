@@ -15,6 +15,10 @@
         public function loadEnv()
         {
             $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
-            $dotenv->load();
+            try {
+                $dotenv->load();
+            } catch (\Exception $e) {
+                die("❌ Erro ao carregar o .env: " . $e->getMessage());
+            }
         }
     }

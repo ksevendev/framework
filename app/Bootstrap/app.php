@@ -8,7 +8,6 @@ use App\Kernel;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 // Criar a aplicação principal
-
 $handler = new Handler();
 
 try {

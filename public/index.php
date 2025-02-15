@@ -1,26 +1,32 @@
 <?php
 
-use FastRoute\Dispatcher;
-use FastRoute\RouteCollector;
-use App\Middleware\MiddlewareHandler;
-use function FastRoute\simpleDispatcher;
+use Core\Routes\BaseRoute;
+use Core\Routes\Dispatcher;
+use Core\Middleware\MiddlewareHandler;
+
+require_once __DIR__ . '/../core/Routes/simpleDispatcher.php'; 
+
+use function Core\Routes\simpleDispatcher;
 
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../bootstrap/app.php';   // Inicializa a configuração básica
-require_once __DIR__ . '/../bootstrap/view.php';  // Carrega o sistema de views
-require_once __DIR__ . '/../bootstrap/components.php';  // Carrega o sistema de components
 
-require_once __DIR__ . '/../bootstrap/helper.php';  // Carrega o helper global
+$BootstrapDir = __DIR__ . '/../app/Bootstrap/';
+
+require_once $BootstrapDir . 'app.php';   // Inicializa a configuração básica
+require_once $BootstrapDir . 'view.php';  // Carrega o sistema de views
+require_once $BootstrapDir . 'components.php';  // Carrega o sistema de components
+
+require_once $BootstrapDir . 'helper.php';  // Carrega o helper global
 
 // Carregar middlewares do arquivo de configuração
-$middlewareConfig = require __DIR__ . '/../bootstrap/middleware.php';
+$middlewareConfig = require $BootstrapDir . 'middleware.php';
 
 // Definir rotas de API e Web
-$routesApi = require __DIR__ . '/../routes/api.php';
-$routesWeb = require __DIR__ . '/../routes/web.php';
+$routesApi = require __DIR__ . '/../app/Routes/api.php';
+$routesWeb = require __DIR__ . '/../app/Routes/web.php';
 
 // Criar o dispatcher com as rotas
-$dispatcher = simpleDispatcher(function (RouteCollector $router) use ($routesApi, $routesWeb) {
+$dispatcher = simpleDispatcher(function (BaseRoute $router) use ($routesApi, $routesWeb) {
     $routesApi($router);
     $routesWeb($router);
 });

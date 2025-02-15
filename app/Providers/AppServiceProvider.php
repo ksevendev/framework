@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
-use App\Application;
-use App\Providers\ServiceProvider;
-use Illuminate\Database\Capsule\Manager as Capsule;
+use Core\Providers\ServiceProvider;
 
+use App\Application;
+
+use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemManager;
 

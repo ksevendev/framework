@@ -2,14 +2,9 @@
 
 namespace App;
 
-use Illuminate\Contracts\Foundation\Application AS App;
-use Illuminate\Container\Container;
+use Core\Application AS CoreApplication;
 
-class Application extends Container //implements App
+class Application extends CoreApplication
 {
-    public function register($provider)
-    {
-        $instance = new $provider($this);
-        $instance->register();
-    }
+    
 }

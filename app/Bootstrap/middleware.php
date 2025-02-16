@@ -8,7 +8,8 @@ return [
     
     // Middlewares Globais para Web
     'web' => [
-        \Core\Middleware\Web\CsrfMiddleware::class, // Exemplo de CSRF para Web
+        \Core\Middleware\Web\SessionMiddleware::class, 
+        \Core\Middleware\Web\CsrfMiddleware::class, // CSRF para Web
     ],
     
     // Middlewares Específicos por Rota

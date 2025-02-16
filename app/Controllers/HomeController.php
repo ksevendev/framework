@@ -3,21 +3,12 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
 use App\Models\User;
 
 class HomeController extends BaseController
 {
-
     public function index()
     {
-
-        $model = new User();
-        $users = $model::all();
-
-        var_dump($users);
-        exit;
-
         $this->view("Bem-vindo ao mini framework!");
     }
 
@@ -33,5 +24,4 @@ class HomeController extends BaseController
             'status' => 'success'
         ]);
     }
-    
 }

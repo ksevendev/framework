@@ -3,23 +3,56 @@ namespace Core\Autoloader;
 
 class Loader
 {
-    public static function register()
+    
+    /**
+     * Carrega automaticamente bibliotecas e módulos de terceiros.
+     */
+    public function loadThirdPartyLibraries()
     {
-        spl_autoload_register([__CLASS__, 'load']);
-    }
-
-    public static function load($class, ?string $base_dir, ?string $prefix)
-    {
-        $prefix = $prefix ?? 'KSeven\\';
-        $base_dir = $base_dir ?? __DIR__ . '/../../app/';
-        
-        // Verifica se a classe pertence ao namespace do framework
-        if (strpos($class, $prefix) === 0) {
-            $relative_class = substr($class, strlen($prefix));
-            $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-            if (file_exists($file)) {
-                require $file;
+        $thirdPartyPath = __DIR__ . '/../../app/ThirdParty';
+        if (is_dir($thirdPartyPath)) {
+            foreach (glob($thirdPartyPath . '/*', GLOB_ONLYDIR) as $libraryDir) {
+                $this->registerLibraryAutoloader($libraryDir);
             }
         }
+    }
+
+    /**
+     * Carrega automaticamente os módulos personalizados.
+     */
+    public function loadModules()
+    {
+        $modulesPath = __DIR__ . '/../../Modules';
+        if (is_dir($modulesPath)) {
+            foreach (glob($modulesPath . '/*', GLOB_ONLYDIR) as $moduleDir) {
+                $this->registerModuleAutoloader($moduleDir);
+            }
+        }
+    }
+
+    /**
+     * Registra o autoloader para uma biblioteca de terceiros.
+     */
+    private function registerLibraryAutoloader(string $libraryDir)
+    {
+        spl_autoload_register(function ($class) use ($libraryDir) {
+            $classFile = $libraryDir . '/src/' . str_replace('\\', '/', $class) . '.php';
+            if (file_exists($classFile)) {
+                require $classFile;
+            }
+        });
+    }
+
+    /**
+     * Registra o autoloader para um módulo.
+     */
+    private function registerModuleAutoloader(string $moduleDir)
+    {
+        spl_autoload_register(function ($class) use ($moduleDir) {
+            $classFile = $moduleDir . '/Controllers/' . str_replace('\\', '/', $class) . '.php';
+            if (file_exists($classFile)) {
+                require $classFile;
+            }
+        });
     }
 }

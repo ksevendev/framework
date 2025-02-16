@@ -4,25 +4,26 @@ namespace Core\Middleware;
 
 class MiddlewareHandler
 {
-    protected array $middlewares = [];
+    protected array $middlewares;
 
-    public function __construct(array $middlewares = [])
+    public function __construct(array $middlewares)
     {
         $this->middlewares = $middlewares;
     }
 
-    public function handle($request, $finalHandler)
+    public function handle($request, \Closure $next)
     {
-        $handler = array_reduce(
-            array_reverse($this->middlewares),
-            function ($next, $middleware) {
-                return function ($request) use ($middleware, $next) {
-                    return (new $middleware())->handle($request, $next);
-                };
-            },
-            $finalHandler
-        );
+        // Processa todos os middlewares em cadeia
+        $middleware = array_shift($this->middlewares);
 
-        return $handler($request);
+        if ($middleware) {
+            $middlewareInstance = new $middleware();
+
+            // Chama o middleware, passando o próximo middleware ou a rota
+            return $middlewareInstance->handle($next);
+        }
+
+        // Se não houver mais middlewares, executa a função de rota
+        return $next($request);
     }
 }

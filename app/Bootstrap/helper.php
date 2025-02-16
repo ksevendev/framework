@@ -70,8 +70,9 @@ if (!function_exists('config')) {
         static $configs = [];
 
         if (empty($configs)) {
-            foreach (glob(__DIR__ . '/../config/*.php') as $file) {
-                $name = basename($file, '.php');
+            foreach (glob(__DIR__ . '/../Config/*.php') as $file) {
+                //$name = basename($file, '.php');
+                $name = strtolower(basename($file, '.php')); // Força minúsculas
                 $configs[$name] = require $file;
             }
         }
@@ -93,5 +94,25 @@ if (!function_exists('config')) {
 if (!function_exists('env')) {
     function env(string $key, $default = null) {
         return $_ENV[$key] ?? getenv($key) ?? $default;
+    }
+}
+
+if (!function_exists('csrfTokenField')) {
+    function csrfTokenField()
+    {
+        // Gera o token CSRF se ele ainda não foi gerado
+        //$csrf = new \Core\Security\CSRF();
+        //$csrf->generateToken();
+        
+        // Recupera o token da sessão (já gerado)
+        $session = new \Symfony\Component\HttpFoundation\Session\Session();
+        $name = config('security.cookie_name');
+        if ($session->has($name)) {
+            $token = $session->get($name);
+            // Retorna o campo CSRF para ser inserido no formulário
+            return '<input type="hidden" name="' . $name . '" value="' . $token . '">';
+        }
+        return null;
+
     }
 }

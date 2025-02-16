@@ -2,14 +2,21 @@
 
 namespace App\Controllers;
 
-use Core\Controllers\BaseController AS CoreController;
+use Core\Controllers\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Psr\Log\NullLogger;
 
-class BaseController extends CoreController
+class BaseController extends Controller
 {
- 
     public function __construct()
     {
-        //parent::__construct();
-    }
+        $request = Request::createFromGlobals();
+        $response = new Response();
+        $session = new Session();
+        $logger = new NullLogger(); // Pode substituir por um logger real
 
+        parent::__construct($request, $response, $session, $logger);
+    }
 }

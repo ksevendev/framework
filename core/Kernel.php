@@ -3,6 +3,7 @@
 namespace Core;
 
 use Core\Application as App;
+use Core\Autoloader\Loader;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Container\Container;
 
@@ -69,6 +70,11 @@ class Kernel
     {
         // Carrega o .env antes de qualquer configuração
         new \Core\Config\BaseConfig();
+
+        // Carregar bibliotecas de terceiros e módulos automaticamente
+        $autoLoader = new Loader();
+        $autoLoader->loadThirdPartyLibraries(); // Carregar bibliotecas de terceiros
+        $autoLoader->loadModules(); // Carregar módulos personalizados
 
         // Get the group connection configuration from the config
         $groupConnection = $this->getConfig('database.group', 'default');

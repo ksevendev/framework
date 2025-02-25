@@ -1,22 +1,26 @@
-
 <?php
 
-use App\Application;
+use Core\Application;
 use Core\Exceptions\Handler;
-use App\Kernel;
+use Core\Kernel;
+use Core\Log\Logger;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-// Criar a aplicação principal
+// Criar o logger
+$Logger = new Logger("app");
+
+// Criar o handler de exceções
 $handler = new Handler();
 
 try {
-    // Inicializa o framework
-    $app = new Application();
-    $kernel = new Kernel($app);
-    $kernel->bootstrap();
+    // Inicializa a aplicação utilizando o padrão Singleton
+    $app = Application::getInstance();  // Usa o Singleton para obter a instância
+    $kernel = new Kernel($app);  // Passa a instância do app para o Kernel
+    $kernel->bootstrap();  // Realiza a inicialização do framework
 } catch (Throwable $e) {
-    $handler->handle($e);
+    $Logger->info($e);  // Registra o erro no log
+    $handler->handle($e);  // Lida com a exceção
 }
 
 return $app;

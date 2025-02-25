@@ -1,32 +1,23 @@
 <?php
 
-use Jenssegers\Blade\Blade;
-use Illuminate\Support\Str;
+use Core\View\View;
 
-// Configuração do Blade
-$views = __DIR__ . '/../Resources/Views';  // Pasta onde as views Blade serão armazenadas
-$cache = __DIR__ . '/../Storage/cache/views';     // Pasta de cache (para otimizar a renderização)
-
-$blade = new Blade($views, $cache);
-
-// Função para renderizar uma view Blade
-function View($view, $data = [])
-{
-    global $blade;
-    echo $blade->make($view, $data)->render();  // Renderiza a view e exibe
-}
-
-
-function renderView($view, $data = [])
-{
-    global $blade;
-
-    // Verifica se o arquivo de view existe
-    $viewPath = __DIR__ . '/../Resources/Views/' . Str::snake($view) . '.blade.php';
-    if (file_exists($viewPath)) {
-        // Renderiza a view Blade com os dados
-        echo $blade->make($view, $data)->render();
-    } else {
-        throw new Exception("View {$view} não encontrada.");
+if (!function_exists('view')) {
+    /**
+     * Renderiza uma view Blade de forma simplificada.
+     * 
+     * @param string $view Nome da view (ex: 'home.index')
+     * @param array $data Dados a serem passados para a view
+     * @param array $mergeData Dados adicionais para mesclar
+     */
+    function view(string $view, array $data = [], array $mergeData = [])
+    {
+        try {
+            // Usando a classe View para renderizar a view
+            return View::render($view, $data, $mergeData); // Renderiza a view e exibe
+        } catch (\Exception $e) {
+            // Caso haja erro, exibe a mensagem
+            die("Erro ao renderizar a view '{$view}': " . $e->getMessage());
+        }
     }
 }

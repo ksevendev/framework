@@ -26,10 +26,12 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        'c7e7ea647ebea22b87ea4885125b6977' => __DIR__ . '/..' . '/ksevendev/fast-route/src/functions.php',
+        '1e259a18f2e21e91ba5f194ff1f3f620' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Helpers/helper.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '987a3a510339fdf2e040305e8e0c9ce9' => __DIR__ . '/../..' . '/core/Helper.php',
         '4e6a16c676173145cf312d712188db6b' => __DIR__ . '/../..' . '/app/Constant.php',
         '2fdd97d633f26d9cac9226f35a0eb8a1' => __DIR__ . '/../..' . '/app/Bootstrap/helper.php',
     );
@@ -38,6 +40,10 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'e' => 
+        array (
+            'eftec\\bladeone\\' => 15,
         ),
         'T' => 
         array (
@@ -81,10 +87,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Prompts\\' => 16,
         ),
-        'J' => 
-        array (
-            'Jenssegers\\Blade\\' => 17,
-        ),
         'I' => 
         array (
             'Invoker\\' => 8,
@@ -97,7 +99,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
             'Illuminate\\Console\\' => 19,
-            'Illuminate\\Config\\' => 18,
             'Illuminate\\Bus\\' => 15,
         ),
         'G' => 
@@ -137,6 +138,10 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'eftec\\bladeone\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/eftec/bladeone/lib',
         ),
         'Tests\\' => 
         array (
@@ -246,10 +251,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
         ),
-        'Jenssegers\\Blade\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jenssegers/blade/src',
-        ),
         'Invoker\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/invoker/src',
@@ -293,10 +294,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         array (
             0 => __DIR__ . '/..' . '/illuminate/console',
         ),
-        'Illuminate\\Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/illuminate/config',
-        ),
         'Illuminate\\Bus\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/bus',
@@ -311,7 +308,7 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         ),
         'FastRoute\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+            0 => __DIR__ . '/..' . '/ksevendev/fast-route/src',
         ),
         'Dotenv\\' => 
         array (
@@ -357,9 +354,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
 
     public static $classMap = array (
         'App\\Application' => __DIR__ . '/../..' . '/app/Application.php',
-        'App\\Commands\\MakeController' => __DIR__ . '/../..' . '/app/Commands/MakeController.php',
-        'App\\Commands\\MakeMiddleware' => __DIR__ . '/../..' . '/app/Commands/MakeMiddleware.php',
-        'App\\Commands\\MakeModel' => __DIR__ . '/../..' . '/app/Commands/MakeModel.php',
         'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/app/Kernel.php',
@@ -485,19 +479,23 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Core\\Controllers\\Controller' => __DIR__ . '/../..' . '/core/Controllers/Controller.php',
         'Core\\Database\\ModelBase' => __DIR__ . '/../..' . '/core/Database/ModelBase.php',
         'Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/Database/QueryBuilder.php',
+        'Core\\Debug\\Toolbar' => __DIR__ . '/../..' . '/core/Debug/Toolbar.php',
         'Core\\Exceptions\\Handler' => __DIR__ . '/../..' . '/core/Exceptions/Handler.php',
+        'Core\\Http\\HttpManager' => __DIR__ . '/../..' . '/core/Http/HttpManager.php',
         'Core\\Kernel' => __DIR__ . '/../..' . '/core/Kernel.php',
         'Core\\Log\\Logger' => __DIR__ . '/../..' . '/core/Log/Logger.php',
         'Core\\Middleware\\Api\\AuthMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Api/AuthMiddleware.php',
         'Core\\Middleware\\Api\\CorsMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Api/CorsMiddleware.php',
+        'Core\\Middleware\\Api\\RateLimitMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Api/RateLimitMiddleware.php',
         'Core\\Middleware\\BaseMiddleware' => __DIR__ . '/../..' . '/core/Middleware/BaseMiddleware.php',
         'Core\\Middleware\\DebugMiddleware' => __DIR__ . '/../..' . '/core/Middleware/DebugMiddleware.php',
         'Core\\Middleware\\MiddlewareHandler' => __DIR__ . '/../..' . '/core/Middleware/MiddlewareHandler.php',
         'Core\\Middleware\\Web\\AuthMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Web/AuthMiddleware.php',
         'Core\\Middleware\\Web\\CsrfMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Web/CsrfMiddleware.php',
+        'Core\\Middleware\\Web\\SessionMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Web/SessionMiddleware.php',
         'Core\\Providers\\ServiceProvider' => __DIR__ . '/../..' . '/core/Providers/ServiceProvider.php',
-        'Core\\Routes\\BaseRoute' => __DIR__ . '/../..' . '/core/Routes/BaseRoute.php',
-        'Core\\Routes\\Dispatcher' => __DIR__ . '/../..' . '/core/Routes/Dispatcher.php',
+        'Core\\Security\\CSRF' => __DIR__ . '/../..' . '/core/Security/CSRF.php',
+        'Core\\View\\View' => __DIR__ . '/../..' . '/core/View/View.php',
         'DI\\Attribute\\Inject' => __DIR__ . '/..' . '/php-di/php-di/src/Attribute/Inject.php',
         'DI\\Attribute\\Injectable' => __DIR__ . '/..' . '/php-di/php-di/src/Attribute/Injectable.php',
         'DI\\CompiledContainer' => __DIR__ . '/..' . '/php-di/php-di/src/CompiledContainer.php',
@@ -678,23 +676,36 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Dotenv\\Util\\Regex' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Util/Regex.php',
         'Dotenv\\Util\\Str' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Util/Str.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
-        'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/nikic/fast-route/src/BadRouteException.php',
-        'FastRoute\\DataGenerator' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator.php',
-        'FastRoute\\DataGenerator\\CharCountBased' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/CharCountBased.php',
-        'FastRoute\\DataGenerator\\GroupCountBased' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/GroupCountBased.php',
-        'FastRoute\\DataGenerator\\GroupPosBased' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/GroupPosBased.php',
-        'FastRoute\\DataGenerator\\MarkBased' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/MarkBased.php',
-        'FastRoute\\DataGenerator\\RegexBasedAbstract' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php',
-        'FastRoute\\Dispatcher' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher.php',
-        'FastRoute\\Dispatcher\\CharCountBased' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher/CharCountBased.php',
-        'FastRoute\\Dispatcher\\GroupCountBased' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher/GroupCountBased.php',
-        'FastRoute\\Dispatcher\\GroupPosBased' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher/GroupPosBased.php',
-        'FastRoute\\Dispatcher\\MarkBased' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher/MarkBased.php',
-        'FastRoute\\Dispatcher\\RegexBasedAbstract' => __DIR__ . '/..' . '/nikic/fast-route/src/Dispatcher/RegexBasedAbstract.php',
-        'FastRoute\\Route' => __DIR__ . '/..' . '/nikic/fast-route/src/Route.php',
-        'FastRoute\\RouteCollector' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteCollector.php',
-        'FastRoute\\RouteParser' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser.php',
-        'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/nikic/fast-route/src/RouteParser/Std.php',
+        'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/ksevendev/fast-route/src/BadRouteException.php',
+        'FastRoute\\Cache' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Cache.php',
+        'FastRoute\\Cache\\FileCache' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Cache/FileCache.php',
+        'FastRoute\\Cache\\Psr16Cache' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Cache/Psr16Cache.php',
+        'FastRoute\\ConfigureRoutes' => __DIR__ . '/..' . '/ksevendev/fast-route/src/ConfigureRoutes.php',
+        'FastRoute\\DataGenerator' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator.php',
+        'FastRoute\\DataGenerator\\CharCountBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator/CharCountBased.php',
+        'FastRoute\\DataGenerator\\GroupCountBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator/GroupCountBased.php',
+        'FastRoute\\DataGenerator\\GroupPosBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator/GroupPosBased.php',
+        'FastRoute\\DataGenerator\\MarkBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator/MarkBased.php',
+        'FastRoute\\DataGenerator\\RegexBasedAbstract' => __DIR__ . '/..' . '/ksevendev/fast-route/src/DataGenerator/RegexBasedAbstract.php',
+        'FastRoute\\Dispatcher' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher.php',
+        'FastRoute\\Dispatcher\\CharCountBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/CharCountBased.php',
+        'FastRoute\\Dispatcher\\GroupCountBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/GroupCountBased.php',
+        'FastRoute\\Dispatcher\\GroupPosBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/GroupPosBased.php',
+        'FastRoute\\Dispatcher\\MarkBased' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/MarkBased.php',
+        'FastRoute\\Dispatcher\\RegexBasedAbstract' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/RegexBasedAbstract.php',
+        'FastRoute\\Dispatcher\\Result\\Matched' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/Result/Matched.php',
+        'FastRoute\\Dispatcher\\Result\\MethodNotAllowed' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/Result/MethodNotAllowed.php',
+        'FastRoute\\Dispatcher\\Result\\NotMatched' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Dispatcher/Result/NotMatched.php',
+        'FastRoute\\Exception' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Exception.php',
+        'FastRoute\\FastRoute' => __DIR__ . '/..' . '/ksevendev/fast-route/src/FastRoute.php',
+        'FastRoute\\GenerateUri' => __DIR__ . '/..' . '/ksevendev/fast-route/src/GenerateUri.php',
+        'FastRoute\\GenerateUri\\FromProcessedConfiguration' => __DIR__ . '/..' . '/ksevendev/fast-route/src/GenerateUri/FromProcessedConfiguration.php',
+        'FastRoute\\GenerateUri\\UriCouldNotBeGenerated' => __DIR__ . '/..' . '/ksevendev/fast-route/src/GenerateUri/UriCouldNotBeGenerated.php',
+        'FastRoute\\Route' => __DIR__ . '/..' . '/ksevendev/fast-route/src/Route.php',
+        'FastRoute\\RouteCollector' => __DIR__ . '/..' . '/ksevendev/fast-route/src/RouteCollector.php',
+        'FastRoute\\RouteHelper' => __DIR__ . '/..' . '/ksevendev/fast-route/src/RouteHelper.php',
+        'FastRoute\\RouteParser' => __DIR__ . '/..' . '/ksevendev/fast-route/src/RouteParser.php',
+        'FastRoute\\RouteParser\\Std' => __DIR__ . '/..' . '/ksevendev/fast-route/src/RouteParser/Std.php',
         'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
         'Firebase\\JWT\\CachedKeySet' => __DIR__ . '/..' . '/firebase/php-jwt/src/CachedKeySet.php',
         'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
@@ -721,7 +732,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Illuminate\\Bus\\Queueable' => __DIR__ . '/..' . '/illuminate/bus/Queueable.php',
         'Illuminate\\Bus\\UniqueLock' => __DIR__ . '/..' . '/illuminate/bus/UniqueLock.php',
         'Illuminate\\Bus\\UpdatedBatchJobCounts' => __DIR__ . '/..' . '/illuminate/bus/UpdatedBatchJobCounts.php',
-        'Illuminate\\Config\\Repository' => __DIR__ . '/..' . '/illuminate/config/Repository.php',
         'Illuminate\\Console\\Application' => __DIR__ . '/..' . '/illuminate/console/Application.php',
         'Illuminate\\Console\\BufferedConsoleOutput' => __DIR__ . '/..' . '/illuminate/console/BufferedConsoleOutput.php',
         'Illuminate\\Console\\CacheCommandMutex' => __DIR__ . '/..' . '/illuminate/console/CacheCommandMutex.php',
@@ -1364,8 +1374,6 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Invoker\\ParameterResolver\\ResolverChain' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/ResolverChain.php',
         'Invoker\\ParameterResolver\\TypeHintResolver' => __DIR__ . '/..' . '/php-di/invoker/src/ParameterResolver/TypeHintResolver.php',
         'Invoker\\Reflection\\CallableReflection' => __DIR__ . '/..' . '/php-di/invoker/src/Reflection/CallableReflection.php',
-        'Jenssegers\\Blade\\Blade' => __DIR__ . '/..' . '/jenssegers/blade/src/Blade.php',
-        'Jenssegers\\Blade\\Container' => __DIR__ . '/..' . '/jenssegers/blade/src/Container.php',
         'Laravel\\Prompts\\Clear' => __DIR__ . '/..' . '/laravel/prompts/src/Clear.php',
         'Laravel\\Prompts\\Concerns\\Colors' => __DIR__ . '/..' . '/laravel/prompts/src/Concerns/Colors.php',
         'Laravel\\Prompts\\Concerns\\Cursor' => __DIR__ . '/..' . '/laravel/prompts/src/Concerns/Cursor.php',
@@ -2990,6 +2998,10 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        'eftec\\bladeone\\BladeOne' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOne.php',
+        'eftec\\bladeone\\BladeOneCache' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCache.php',
+        'eftec\\bladeone\\BladeOneCacheRedis' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCacheRedis.php',
+        'eftec\\bladeone\\BladeOneCustom' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneCustom.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

@@ -1,22 +1,17 @@
 <?php
 
-use Core\Routes\BaseRoute;
+use FastRoute\ConfigureRoutes;
+
+/**
+ * @var ConfigureRoutes $router
+ * @route web
+ */
 
 use App\Controllers\HomeController;
 
-return function (BaseRoute $router) {
-    $router->addRoute('GET', '/', 'App\Controllers\HomeController@index');
-    $router->addRoute('GET', '/sobre', 'App\Controllers\HomeController@sobre');
+return function (ConfigureRoutes $router) {
+    $router->addRoute('GET', '/', 'App\Controllers\HomeController@index', ["_name" => "home"]);
+    $router->addRoute('GET', '/sobre', 'App\Controllers\HomeController@sobre', ["_name" => "about"]);
+    $router->addRoute('GET', '/url', 'App\Controllers\HomeController@url', ["_name" => "url"]);
+    $router->get('/user/{id}', 'App\Controllers\UserController@profile', ['_name' => 'user_profile']);
 };
-
-/*
-return function (BaseRoute $router) {
-    $router->addRoute('GET', '/', function () {
-        echo "Bem-vindo ao Mini Framework!";
-    });
-
-    $router->addRoute('GET', '/sobre', function () {
-        echo "Sobre nós";
-    });
-};
-*/

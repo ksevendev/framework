@@ -9,7 +9,30 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        $this->view("Bem-vindo ao mini framework!");
+
+        $users = User::all();
+        
+        //return app('view')->render('default', []);
+        //echo View::render('default', []);
+        //return view('default', ['title' => 'Bem-vindo!']);
+        return $this->view('default', ['title' => $users]);
+
+
+    }
+
+    public function url()
+    {
+        
+        $url = config('config.base_url');
+        //vdump($url);
+        echo base_url('home') . "<br />";
+        echo "<br />";
+        echo url_to('home') . "<br />";
+        echo "<br />";
+        echo route_to('about') . "<br />";
+        echo url_to('user_profile', ['id' => 5]) . "<br />";
+        echo "<br />";
+        exit;
     }
 
     public function sobre()

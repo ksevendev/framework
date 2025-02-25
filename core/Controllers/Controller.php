@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Cookie;
 use Psr\Log\LoggerInterface;
+use Illuminate\Container\Container;
 
 class Controller
 {
@@ -124,10 +125,20 @@ class Controller
     /**
      * Renderiza uma página HTML simples
      */
-    public function view($content)
+    public function view(string $view, array $data = [], array $mergeData = [])
     {
-        echo $content;
-        exit;
+        // Obtém a instância do View corretamente
+        //return app(\Core\View\View::class)->render($view, $data);
+        return view($view, $data);
+    }
+
+    /**
+     * Renderiza uma página HTML simples
+     */
+    public function v(string $view, array $data = [], array $mergeData = [])
+    {
+        // Obtém a instância do View corretamente
+        return app(\Core\View\View::class)->internalRender($view, $data);
     }
 
     /**

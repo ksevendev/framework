@@ -303,6 +303,68 @@
             "install-path": "../doctrine/instantiator"
         },
         {
+            "name": "eftec/bladeone",
+            "version": "4.18",
+            "version_normalized": "4.18.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOne.git",
+                "reference": "fb51dcd21ba6c998b96d26ac5babfca1bd05acdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/fb51dcd21ba6c998b96d26ac5babfca1bd05acdf",
+                "reference": "fb51dcd21ba6c998b96d26ac5babfca1bd05acdf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.23"
+            },
+            "suggest": {
+                "eftec/bladeonehtml": "Extension to create forms",
+                "ext-mbstring": "This extension is used if it's active"
+            },
+            "time": "2025-02-22T00:12:47+00:00",
+            "bin": [
+                "lib/bladeonecli"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeone\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOne",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/EFTEC/BladeOne/issues",
+                "source": "https://github.com/EFTEC/BladeOne/tree/4.18"
+            },
+            "install-path": "../eftec/bladeone"
+        },
+        {
             "name": "firebase/php-jwt",
             "version": "v6.11.0",
             "version_normalized": "6.11.0.0",
@@ -435,17 +497,17 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "ba72acb32635230466317f8acdffb1b70270c438"
+                "reference": "a6945ee3f9f19f45e8ecbfda1884418d13794e1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/ba72acb32635230466317f8acdffb1b70270c438",
-                "reference": "ba72acb32635230466317f8acdffb1b70270c438",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/a6945ee3f9f19f45e8ecbfda1884418d13794e1d",
+                "reference": "a6945ee3f9f19f45e8ecbfda1884418d13794e1d",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +520,7 @@
             "suggest": {
                 "illuminate/queue": "Required to use closures when chaining jobs (^7.0)."
             },
-            "time": "2025-02-06T22:52:28+00:00",
+            "time": "2025-02-12T20:57:17+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -491,17 +553,17 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd"
+                "reference": "8a650cf80dce7f37f20b8bf33e11922b291bf0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
-                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/8a650cf80dce7f37f20b8bf33e11922b291bf0e2",
+                "reference": "8a650cf80dce7f37f20b8bf33e11922b291bf0e2",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +575,7 @@
             "suggest": {
                 "symfony/var-dumper": "Required to use the dump method (^7.0)."
             },
-            "time": "2025-02-05T10:23:21+00:00",
+            "time": "2025-02-19T15:59:05+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -550,8 +612,8 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -598,60 +660,9 @@
             "install-path": "../illuminate/conditionable"
         },
         {
-            "name": "illuminate/config",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/config.git",
-                "reference": "64daa8d520cd76e505a82460a672692c56a07be8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/config/zipball/64daa8d520cd76e505a82460a672692c56a07be8",
-                "reference": "64daa8d520cd76e505a82460a672692c56a07be8",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/collections": "^11.0",
-                "illuminate/contracts": "^11.0",
-                "php": "^8.2"
-            },
-            "time": "2024-11-14T17:17:02+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "11.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Config\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Config package.",
-            "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "install-path": "../illuminate/config"
-        },
-        {
             "name": "illuminate/console",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -719,8 +730,8 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -773,8 +784,8 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -824,17 +835,17 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "3be287b7ac5e8d6401753c8a687ec6db8fa2d47b"
+                "reference": "131dcdfcc6c838115d5e58c77d4fe816f735dff8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/3be287b7ac5e8d6401753c8a687ec6db8fa2d47b",
-                "reference": "3be287b7ac5e8d6401753c8a687ec6db8fa2d47b",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/131dcdfcc6c838115d5e58c77d4fe816f735dff8",
+                "reference": "131dcdfcc6c838115d5e58c77d4fe816f735dff8",
                 "shasum": ""
             },
             "require": {
@@ -857,7 +868,7 @@
                 "illuminate/pagination": "Required to paginate the result set (^11.0).",
                 "symfony/finder": "Required to use Eloquent model factories (^7.0)."
             },
-            "time": "2025-02-12T16:27:26+00:00",
+            "time": "2025-02-21T13:01:45+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -896,8 +907,8 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -954,17 +965,17 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "a8768cca697ddf6f0cecc6f5bd4763808d84c0b7"
+                "reference": "c79a54ebc61ad4e1665ca7610f276ff8a92f48f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/a8768cca697ddf6f0cecc6f5bd4763808d84c0b7",
-                "reference": "a8768cca697ddf6f0cecc6f5bd4763808d84c0b7",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/c79a54ebc61ad4e1665ca7610f276ff8a92f48f7",
+                "reference": "c79a54ebc61ad4e1665ca7610f276ff8a92f48f7",
                 "shasum": ""
             },
             "require": {
@@ -988,7 +999,7 @@
                 "symfony/filesystem": "Required to enable support for relative symbolic links (^7.0).",
                 "symfony/mime": "Required to enable support for guessing extensions (^7.0)."
             },
-            "time": "2025-01-24T16:08:55+00:00",
+            "time": "2025-02-19T20:17:00+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1024,8 +1035,8 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1073,17 +1084,17 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
-                "reference": "a784f85ca9d6c37435c542ea487d78206a7df3ad"
+                "reference": "713afd1b476f1974f6e0207fc9f65671f16fb64b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/pipeline/zipball/a784f85ca9d6c37435c542ea487d78206a7df3ad",
-                "reference": "a784f85ca9d6c37435c542ea487d78206a7df3ad",
+                "url": "https://api.github.com/repos/illuminate/pipeline/zipball/713afd1b476f1974f6e0207fc9f65671f16fb64b",
+                "reference": "713afd1b476f1974f6e0207fc9f65671f16fb64b",
                 "shasum": ""
             },
             "require": {
@@ -1091,7 +1102,7 @@
                 "illuminate/support": "^11.0",
                 "php": "^8.2"
             },
-            "time": "2025-01-07T23:29:34+00:00",
+            "time": "2025-02-17T16:02:42+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1124,17 +1135,17 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "047a52ac6464f7861ff05e00464fe41ed2117e9a"
+                "reference": "d86d42ad0c75a020e0e4a7c734e9424ca86811cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/047a52ac6464f7861ff05e00464fe41ed2117e9a",
-                "reference": "047a52ac6464f7861ff05e00464fe41ed2117e9a",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/d86d42ad0c75a020e0e4a7c734e9424ca86811cc",
+                "reference": "d86d42ad0c75a020e0e4a7c734e9424ca86811cc",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1178,7 @@
                 "symfony/var-dumper": "Required to use the dd function (^7.0).",
                 "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.6.1)."
             },
-            "time": "2025-02-11T21:36:04+00:00",
+            "time": "2025-02-23T14:20:22+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1204,17 +1215,17 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v11.42.1",
-            "version_normalized": "11.42.1.0",
+            "version": "v11.44.0",
+            "version_normalized": "11.44.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "9f9bed5b55b1b888a6149860b4b26b20ca4435bf"
+                "reference": "fb583cecd970d5eb1265320208fb234e1103eaa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/9f9bed5b55b1b888a6149860b4b26b20ca4435bf",
-                "reference": "9f9bed5b55b1b888a6149860b4b26b20ca4435bf",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/fb583cecd970d5eb1265320208fb234e1103eaa7",
+                "reference": "fb583cecd970d5eb1265320208fb234e1103eaa7",
                 "shasum": ""
             },
             "require": {
@@ -1228,7 +1239,7 @@
                 "illuminate/support": "^11.0",
                 "php": "^8.2"
             },
-            "time": "2025-01-22T21:19:28+00:00",
+            "time": "2025-02-17T16:11:15+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1260,70 +1271,74 @@
             "install-path": "../illuminate/view"
         },
         {
-            "name": "jenssegers/blade",
-            "version": "v2.0.1",
-            "version_normalized": "2.0.1.0",
+            "name": "ksevendev/fast-route",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jenssegers/blade.git",
-                "reference": "7a31d61a6b1fe9cae5c61349dba435498dd8097c"
+                "url": "https://github.com/ksevendev/FastRoute.git",
+                "reference": "fd9614e07fc47ee9cc29a6e2557cb6d537aadc6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/blade/zipball/7a31d61a6b1fe9cae5c61349dba435498dd8097c",
-                "reference": "7a31d61a6b1fe9cae5c61349dba435498dd8097c",
+                "url": "https://api.github.com/repos/ksevendev/FastRoute/zipball/fd9614e07fc47ee9cc29a6e2557cb6d537aadc6d",
+                "reference": "fd9614e07fc47ee9cc29a6e2557cb6d537aadc6d",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "^9.0|^10.0|^11.0",
-                "illuminate/view": "^9.0|^10.0|^11.0",
-                "php": ">=8.1"
+                "php": ">=8.1.0",
+                "psr/simple-cache": "^2.0 || ^3.0"
             },
             "require-dev": {
-                "laravel/pint": "^1.13",
-                "phpunit/phpunit": "^10.0"
+                "lcobucci/coding-standard": "^11.0",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpstan/phpstan-strict-rules": "^1.5",
+                "phpunit/phpunit": "^10.3"
             },
-            "time": "2024-03-16T21:41:52+00:00",
+            "time": "2025-02-25T18:25:14+00:00",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "installation-source": "dist",
             "autoload": {
+                "files": [
+                    "src/functions.php",
+                    "src/Helpers/helper.php"
+                ],
                 "psr-4": {
-                    "Jenssegers\\Blade\\": "src/"
+                    "FastRoute\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Jens Segers",
-                    "homepage": "https://jenssegers.com"
-                }
-            ],
-            "description": "The standalone version of Laravel's Blade templating engine for use outside of Laravel.",
-            "keywords": [
-                "blade",
-                "laravel",
-                "render",
-                "template",
-                "view"
-            ],
-            "support": {
-                "issues": "https://github.com/jenssegers/blade/issues",
-                "source": "https://github.com/jenssegers/blade/tree/v2.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/jenssegers",
-                    "type": "github"
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
                 },
                 {
-                    "url": "https://opencollective.com/jenssegers-blade",
-                    "type": "open_collective"
+                    "name": "K'Seven Developer",
+                    "email": "contato@kseven.dev.br"
                 }
             ],
-            "install-path": "../jenssegers/blade"
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "support": {
+                "source": "https://github.com/ksevendev/FastRoute/tree/2.0.2"
+            },
+            "install-path": "../ksevendev/fast-route"
         },
         {
             "name": "laravel/prompts",
@@ -1622,17 +1637,17 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.5",
-            "version_normalized": "3.8.5.0",
+            "version": "3.8.6",
+            "version_normalized": "3.8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "b1a53a27898639579a67de42e8ced5d5386aa9a4"
+                "reference": "ff2f20cf83bd4d503720632ce8a426dc747bf7fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/b1a53a27898639579a67de42e8ced5d5386aa9a4",
-                "reference": "b1a53a27898639579a67de42e8ced5d5386aa9a4",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/ff2f20cf83bd4d503720632ce8a426dc747bf7fd",
+                "reference": "ff2f20cf83bd4d503720632ce8a426dc747bf7fd",
                 "shasum": ""
             },
             "require": {
@@ -1659,7 +1674,7 @@
                 "phpunit/phpunit": "^10.5.20",
                 "squizlabs/php_codesniffer": "^3.9.0"
             },
-            "time": "2025-02-11T16:28:45+00:00",
+            "time": "2025-02-20T17:33:38+00:00",
             "bin": [
                 "bin/carbon"
             ],
@@ -1728,59 +1743,6 @@
                 }
             ],
             "install-path": "../nesbot/carbon"
-        },
-        {
-            "name": "nikic/fast-route",
-            "version": "v1.3.0",
-            "version_normalized": "1.3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/FastRoute.git",
-                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
-                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35|~5.7"
-            },
-            "time": "2018-02-13T20:26:39+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "FastRoute\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov",
-                    "email": "nikic@php.net"
-                }
-            ],
-            "description": "Fast request router for PHP",
-            "keywords": [
-                "router",
-                "routing"
-            ],
-            "support": {
-                "issues": "https://github.com/nikic/FastRoute/issues",
-                "source": "https://github.com/nikic/FastRoute/tree/master"
-            },
-            "install-path": "../nikic/fast-route"
         },
         {
             "name": "nikic/php-parser",

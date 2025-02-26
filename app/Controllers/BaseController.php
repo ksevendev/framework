@@ -10,6 +10,8 @@ use Psr\Log\NullLogger;
 
 class BaseController extends Controller
 {
+
+
     public function __construct()
     {
         $request = Request::createFromGlobals();
@@ -18,5 +20,6 @@ class BaseController extends Controller
         $logger = new NullLogger(); // Pode substituir por um logger real
 
         parent::__construct($request, $response, $session, $logger);
+
     }
 }

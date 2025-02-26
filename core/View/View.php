@@ -13,10 +13,12 @@ class View extends BladeOne
 
     protected static array $sharedData = []; // Dados globais para todas as views
 
+    protected static string $template_enabled = "default";
+
     public function __construct($templatePath = null, $compiledPath = null, $mode = 0, $commentMode = 0)
     {
         if ($templatePath === null) {
-            $templatePath = __DIR__ . '/../resources/views';
+            $templatePath = __DIR__ . '/../' . (self::$template_enabled ? 'templates' : 'resources/views');  // Path para views personalizadas
         }
         if ($compiledPath === null) {
             $compiledPath = __DIR__ . '/../storage/cache/views';
@@ -27,6 +29,8 @@ class View extends BladeOne
         if (self::$Logger === null) {
             self::$Logger = new Logger("Views");
         }
+
+        self::$template_enabled = config("template.enabled");
 
     }
 
@@ -63,7 +67,7 @@ class View extends BladeOne
     {
         // Caminho absoluto correto para as views padrão e personalizadas
         $defaultViewPath = __DIR__ . '/../View/erros';  // Path para a view padrão
-        $customViewPath = __DIR__ . '/../../../app/views/erros';  // Path para views personalizadas
+        $customViewPath = __DIR__ . '/../../' . (self::$template_enabled ? 'templates' : 'resources/views/erros');  // Path para views personalizadas
 
         // Verifica se a view personalizada existe
         $viewPath = file_exists($customViewPath . "/" . $name . ".blade.php") ? $customViewPath : $defaultViewPath;

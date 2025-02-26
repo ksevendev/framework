@@ -23,10 +23,8 @@ $RoutesDir = __DIR__ . '/../app/Routes/';
 // Buscar todos os arquivos de rota
 $routeFiles = glob($RoutesDir . '*.php');
 $routeCallbacks = [];
-
 foreach ($routeFiles as $file) {
     $conteudo = file_get_contents($file);
-
     if (preg_match('/@route\s+(web|api|console)/', $conteudo, $matches)) {
         $route = require $file;
         if (is_callable($route)) {
@@ -38,6 +36,8 @@ foreach ($routeFiles as $file) {
 // Criar o dispatcher das rotas
 $dispatcher = simpleDispatcher(
     function (ConfigureRoutes $router) use ($routeCallbacks) {
+        $RouterConfig = require __DIR__ . "/../core/Config/RouterConfig.php";
+        $RouterConfig($router);
         foreach ($routeCallbacks as $route) {
             $route($router);
         }
@@ -48,6 +48,8 @@ $dispatcher = simpleDispatcher(
         'cacheFile'     => __DIR__ . '/../storage/cache/route.cache',
     ]
 );
+
+//vdump($dispatcher);
 
 // 🔹 Obter método e URI da requisição
 $httpMethod = $_SERVER['REQUEST_METHOD'];
@@ -64,11 +66,11 @@ $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 
 switch ($routeInfo[0]) {
     case Dispatcher::NOT_FOUND:
-        response(new \Core\Controllers\NotFoundController, 'index');
+        render(new \Core\Controllers\NotFoundController, 'index');
         break;
 
     case Dispatcher::METHOD_NOT_ALLOWED:
-        response(new \Core\Controllers\NotAllowController, 'index');
+        render(new \Core\Controllers\NotAllowController, 'index');
         break;
 
     case Dispatcher::FOUND:
@@ -80,26 +82,35 @@ switch ($routeInfo[0]) {
             $middlewares = array_merge($middlewares, $middlewareConfig['routeSpecific'][$uri]);
         }
 
-        // 🔹 Executar middlewares e chamar o handler da rota
+        // Executar middlewares e chamar o handler da rota
         (new MiddlewareHandler($middlewares))->handle($_SERVER, function () use ($handler, $vars) {
-            if (is_callable($handler)) {
-                response($handler, $vars);
+            if ($handler instanceof Closure) {
+                // Se for um Closure, chama diretamente
+                echo call_user_func_array($handler, $vars); // Chama o Closure com os parâmetros
             } elseif (is_string($handler) && str_contains($handler, '@')) {
+                // Caso seja uma string no formato 'Classe@Método'
                 [$class, $method] = explode('@', $handler);
-                class_exists($class) && method_exists($class, $method)
-                    ? response(new $class, $method, $vars)
-                    : response(new \Core\Controllers\InternalController, 'index');
+                if (class_exists($class) && method_exists($class, $method)) {
+                    render(new $class, $method, $vars); // Chama a função render corretamente
+                } else {
+                    render(new \Core\Controllers\InternalController, 'index'); // Caso contrário, chama uma controller de erro
+                }
             } else {
-                response(new \Core\Controllers\InternalController, 'index');
+                render(new \Core\Controllers\InternalController, 'index'); // Caso o handler não seja válido, chama a controller de erro
             }
         });
+
         break;
 }
 
 /**
  * Função auxiliar para chamar controllers e handlers
  */
-function response($controller, string $method = 'index', array $params = [])
+function render($controller, string $method = 'index', array $params = [])
 {
-    echo call_user_func_array([$controller, $method], $params);
+    if ($controller instanceof Closure) {
+        echo call_user_func_array($controller, $params);
+    } else {
+        echo call_user_func_array([$controller, $method], $params);
+    }
 }

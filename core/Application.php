@@ -17,8 +17,7 @@ class Application extends Container
     private function __construct()
     {
         //parent::__construct();
-        //$this->environment = config('config.env') ?: 'production';
-        $this->environment = getenv('APP_ENV') ?: 'production';
+        $this->environment = config('config.debug') ? "Development" : 'Production';
     }
 
     /**
@@ -75,7 +74,7 @@ class Application extends Container
         static $configs = [];
 
         if (empty($configs)) {
-            foreach (glob(__DIR__ . '/../Config/*.php') as $file) {
+            foreach (glob(__DIR__ . '/../app/Config/*.php') as $file) {
                 //$name = basename($file, '.php');
                 $name = strtolower(basename($file, '.php')); // Força minúsculas
                 $configs[$name] = require $file;
@@ -98,15 +97,34 @@ class Application extends Container
     /**
      * Verifica o ambiente da aplicação
      */
-    public function environment(string ...$envs): bool
+    public function environment(string ...$envs)
     {
-        // Se não forem passados parâmetros, retorna o ambiente atual
-        if (empty($envs)) {
-            return $this->environment;
-        }
+        return $this->environment;
+    }
 
-        // Verifica se o ambiente atual está na lista de ambientes fornecidos
-        return in_array($this->environment, $envs);
+    /**
+     * Pagina de error
+     */
+    public function page_error($code = 404)
+    {
+        switch ($code) {
+            case 403:
+                render(new \Core\Controllers\ForbiddenController, 'index');
+                break;
+            case 404:
+                render(new \Core\Controllers\NotFoundController, 'index');
+                break;
+            case 405:
+                render(new \Core\Controllers\NotAllowController, 'index');
+                break;
+            case 500:
+                render(new \Core\Controllers\InternalController, 'index');
+                break;
+            
+            default:
+                render(new \Core\Controllers\NotFoundController, 'index');
+                break;
+        }
     }
 
 }

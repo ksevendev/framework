@@ -1,24 +1,33 @@
 <?php
 
-    namespace Core\Config;
+namespace Core\Config;
 
-    use Dotenv\Dotenv;
+use Dotenv\Dotenv;
 
-    class BaseConfig
+class BaseConfig
+{
+    private static ?BaseConfig $instance = null;
+
+    private function __construct()
     {
+        $this->loadEnv();
+    }
 
-        public function __construct()
-        {
-            $this->loadEnv();
+    public static function getInstance(): BaseConfig
+    {
+        if (self::$instance === null) {
+            self::$instance = new self();
         }
+        return self::$instance;
+    }
 
-        public function loadEnv()
-        {
-            $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
-            try {
-                $dotenv->load();
-            } catch (\Exception $e) {
-                die("❌ Erro ao carregar o .env: " . $e->getMessage());
-            }
+    private function loadEnv()
+    {
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
+        try {
+            $dotenv->load();
+        } catch (\Exception $e) {
+            die("❌ Erro ao carregar o .env: " . $e->getMessage());
         }
     }
+}

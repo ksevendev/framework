@@ -23,6 +23,8 @@ class Controller
 
     protected bool $forceHTTPS = false;
 
+    protected string $template_active = "default";
+
     public function __construct(Request $request, Response $response, Session $session, LoggerInterface $logger)
     {
         $this->request = $request;
@@ -39,6 +41,9 @@ class Controller
 
         // Autoload helper files
         $this->loadHelpers();
+     
+        $this->template_active = config("template.active");
+
     }
 
     /**
@@ -129,7 +134,7 @@ class Controller
     {
         // Obtém a instância do View corretamente
         //return app(\Core\View\View::class)->render($view, $data);
-        return view($view, $data);
+        return view($this->template_active . "." . $view, $data);
     }
 
     /**

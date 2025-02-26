@@ -11,7 +11,7 @@ class HomeController extends BaseController
     {
 
         $users = User::all();
-        
+
         //return app('view')->render('default', []);
         //echo View::render('default', []);
         //return view('default', ['title' => 'Bem-vindo!']);

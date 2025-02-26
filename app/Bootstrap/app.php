@@ -14,6 +14,7 @@ $Logger = new Logger("app");
 $handler = new Handler();
 
 try {
+    \Core\Config\BaseConfig::getInstance();
     // Inicializa a aplicação utilizando o padrão Singleton
     $app = Application::getInstance();  // Usa o Singleton para obter a instância
     $kernel = new Kernel($app);  // Passa a instância do app para o Kernel

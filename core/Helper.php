@@ -23,6 +23,13 @@ if (!function_exists('app')) {
     }
 }
 
+if (!function_exists('page_error')) {
+    function page_error(int $code = 404)
+    {
+       return app()->page_error($code);
+    }
+}
+
 if (!function_exists('view')) {
     function view(string $view, array $data = []): string
     {
@@ -110,23 +117,48 @@ if (!function_exists('url_to')) {
     }
 }
 
-if (!function_exists('asset')) {
-    function asset(string $path): string
+// Função auxiliar para gerar o caminho correto para arquivos dentro da pasta 'resources'
+if (!function_exists('resource_path')) {
+    function resource_path(string $path = '')
     {
-        return base_url("resources/assets/{$path}");
+        return realpath(__DIR__ . '/../resources') . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
+    }
+}
+
+if (!function_exists('resource_to')) {
+    function resource_to(string $path): string
+    {
+        return base_url("r/" . $path);
+
+    }
+}
+
+if (!function_exists('template_path')) {
+    function template_path(string $path = null)
+    {
+        $template_active = config("template.active");
+        return realpath(__DIR__ . '/../templates/' . $template_active) . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
+    }
+}
+
+if (!function_exists('template_to')) {
+    function template_to(string $path): string
+    {
+        return base_url("t/" . $path);
+
     }
 }
 
 if (!function_exists('public_path')) {
     function public_path(string $path = ''): string
     {
-        return realpath(__DIR__ . '/../../../public') . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
+        return realpath(__DIR__ . '/../public') . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
     }
 }
 
 if (!function_exists('path_root')) {
     function path_root(string $path = ''): string
     {
-        return realpath(__DIR__ . '/../../..') . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
+        return realpath(__DIR__ . '/../') . ($path ? DIRECTORY_SEPARATOR . ltrim($path, '/') : '');
     }
 }

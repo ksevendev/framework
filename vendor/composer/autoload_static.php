@@ -77,6 +77,7 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
             'Psr\\Clock\\' => 10,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -238,6 +239,10 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Monolog\\' => 
         array (
@@ -477,6 +482,11 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Core\\Console\\Commands\\MakeModel' => __DIR__ . '/../..' . '/core/Console/Commands/MakeModel.php',
         'Core\\Console\\Kernel' => __DIR__ . '/../..' . '/core/Console/Kernel.php',
         'Core\\Controllers\\Controller' => __DIR__ . '/../..' . '/core/Controllers/Controller.php',
+        'Core\\Controllers\\ForbiddenController' => __DIR__ . '/../..' . '/core/Controllers/ForbiddenController.php',
+        'Core\\Controllers\\InternalController' => __DIR__ . '/../..' . '/core/Controllers/InternalController.php',
+        'Core\\Controllers\\NotAllowController' => __DIR__ . '/../..' . '/core/Controllers/NotAllowController.php',
+        'Core\\Controllers\\NotFoundController' => __DIR__ . '/../..' . '/core/Controllers/NotFoundController.php',
+        'Core\\Controllers\\ResourcesController' => __DIR__ . '/../..' . '/core/Controllers/ResourcesController.php',
         'Core\\Database\\ModelBase' => __DIR__ . '/../..' . '/core/Database/ModelBase.php',
         'Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/Database/QueryBuilder.php',
         'Core\\Debug\\Toolbar' => __DIR__ . '/../..' . '/core/Debug/Toolbar.php',
@@ -495,6 +505,9 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Core\\Middleware\\Web\\SessionMiddleware' => __DIR__ . '/../..' . '/core/Middleware/Web/SessionMiddleware.php',
         'Core\\Providers\\ServiceProvider' => __DIR__ . '/../..' . '/core/Providers/ServiceProvider.php',
         'Core\\Security\\CSRF' => __DIR__ . '/../..' . '/core/Security/CSRF.php',
+        'Core\\Utils\\Email' => __DIR__ . '/../..' . '/core/Utils/Email.php',
+        'Core\\Utils\\FileManager' => __DIR__ . '/../..' . '/core/Utils/FileManager.php',
+        'Core\\Utils\\Upload' => __DIR__ . '/../..' . '/core/Utils/Upload.php',
         'Core\\View\\View' => __DIR__ . '/../..' . '/core/View/View.php',
         'DI\\Attribute\\Inject' => __DIR__ . '/..' . '/php-di/php-di/src/Attribute/Inject.php',
         'DI\\Attribute\\Injectable' => __DIR__ . '/..' . '/php-di/php-di/src/Attribute/Injectable.php',
@@ -1568,6 +1581,13 @@ class ComposerStaticInitdc8db2e07c16991b7599123efa9e6b95
         'Monolog\\Utils' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Utils.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Override' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/Override.php',
+        'PHPMailer\\PHPMailer\\DSNConfigurator' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/DSNConfigurator.php',
+        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',
+        'PHPMailer\\PHPMailer\\OAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuth.php',
+        'PHPMailer\\PHPMailer\\OAuthTokenProvider' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuthTokenProvider.php',
+        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
+        'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
+        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',

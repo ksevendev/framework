@@ -34,8 +34,8 @@ class Kernel
         $this->capsule = $capsule ?? new Capsule;
         $this->loadConfig();
         $this->toolbar = new Toolbar(); // Cria a instância da toolbar
-        $env = env("APP_ENV");//$this->getConfig('config.env', 'production');
-        if ($env !== 'production') {
+        $debug = env("APP_DEBUG");//$this->getConfig('config.env', 'production');
+        if ($debug !== 'production') {
             $this->toolbar->render(); // Exibe a toolbar
         }
 
@@ -43,7 +43,6 @@ class Kernel
 
     public function bootstrap()
     {
-        new \Core\Config\BaseConfig();
 
         $autoLoader = new Loader();
         $autoLoader->loadThirdPartyLibraries();
@@ -62,9 +61,16 @@ class Kernel
         Container::setInstance($this->core);
         $this->core->instance('db', $this->capsule);
 
+        $template_enabled = $this->getConfig('template.enabled', false);
+        if ($template_enabled) {
+            $template_path = __DIR__ . '/../templates';
+        } else {
+            $template_path = __DIR__ . '/../resources/views';
+        }
+
         // Configuração do Blade
         $view = new View(
-            __DIR__ . '/../resources/views', 
+            $template_path, 
             __DIR__ . '/../storage/cache/views',
             View::MODE_DEBUG,
             0
@@ -72,7 +78,6 @@ class Kernel
         
         $this->app->instance('view', $view); // Registra no container com nome "view"
         $this->app->instance(View::class, $view); // Registra com o nome da classe
-        
 
         foreach ($this->providers as $provider) {
             $this->app->register($provider);
